@@ -22,6 +22,11 @@
   		<version>6.8.21</version>
   		<scope>test</scope>
   	</dependency>
+  	<dependency>
+  		<groupId>org.seleniumhq.selenium</groupId>
+  		<artifactId>selenium-chrome-driver</artifactId>
+  		<version>2.44.0</version>
+  	</dependency>
   </dependencies>
   <reporting>
     <plugins>

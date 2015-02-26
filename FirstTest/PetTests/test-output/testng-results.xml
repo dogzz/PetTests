@@ -1,25 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1471" started-at="2015-02-20T15:50:22Z" finished-at="2015-02-20T15:50:24Z">
+  <suite name="Default suite" duration-ms="14705" started-at="2015-02-26T14:05:35Z" finished-at="2015-02-26T14:05:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1471" started-at="2015-02-20T15:50:22Z" finished-at="2015-02-20T15:50:24Z">
+    <test name="Default test" duration-ms="14705" started-at="2015-02-26T14:05:35Z" finished-at="2015-02-26T14:05:49Z">
       <class name="artifact.tests.CartBuilderTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:artifact.tests.CartBuilderTest@6ae006d8]" name="init" is-config="true" duration-ms="10672" started-at="2015-02-20T17:50:12Z" finished-at="2015-02-20T17:50:22Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:artifact.tests.CartBuilderTest@2b7ac7ba]" name="init" is-config="true" duration-ms="8030" started-at="2015-02-26T16:05:35Z" finished-at="2015-02-26T16:05:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testAddCorrectItem()[pri:0, instance:artifact.tests.CartBuilderTest@6ae006d8]" name="testAddCorrectItem" duration-ms="1447" started-at="2015-02-20T17:50:22Z" finished-at="2015-02-20T17:50:24Z">
+        <test-method status="PASS" signature="navigateToCartBuilderPage()[pri:0, instance:artifact.tests.CartBuilderTest@2b7ac7ba]" name="navigateToCartBuilderPage" is-config="true" duration-ms="185" started-at="2015-02-26T16:05:44Z" finished-at="2015-02-26T16:05:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCartBuilderPage -->
+        <test-method status="PASS" signature="testAddCorrectItem()[pri:0, instance:artifact.tests.CartBuilderTest@2b7ac7ba]" name="testAddCorrectItem" duration-ms="617" started-at="2015-02-26T16:05:44Z" finished-at="2015-02-26T16:05:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddCorrectItem -->
-        <test-method status="PASS" signature="closeAll()[pri:0, instance:artifact.tests.CartBuilderTest@6ae006d8]" name="closeAll" is-config="true" duration-ms="1163" started-at="2015-02-20T17:50:24Z" finished-at="2015-02-20T17:50:25Z">
+        <test-method status="PASS" signature="navigateToCartBuilderPage()[pri:0, instance:artifact.tests.CartBuilderTest@2b7ac7ba]" name="navigateToCartBuilderPage" is-config="true" duration-ms="217" started-at="2015-02-26T16:05:45Z" finished-at="2015-02-26T16:05:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCartBuilderPage -->
+        <test-method status="PASS" signature="testAddFullCorrectItem()[pri:0, instance:artifact.tests.CartBuilderTest@2b7ac7ba]" name="testAddFullCorrectItem" duration-ms="965" started-at="2015-02-26T16:05:45Z" finished-at="2015-02-26T16:05:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddFullCorrectItem -->
+        <test-method status="PASS" signature="navigateToCartBuilderPage()[pri:0, instance:artifact.tests.CartBuilderTest@2b7ac7ba]" name="navigateToCartBuilderPage" is-config="true" duration-ms="168" started-at="2015-02-26T16:05:46Z" finished-at="2015-02-26T16:05:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCartBuilderPage -->
+        <test-method status="PASS" signature="testClearCartWithFullItem()[pri:0, instance:artifact.tests.CartBuilderTest@2b7ac7ba]" name="testClearCartWithFullItem" duration-ms="1210" started-at="2015-02-26T16:05:46Z" finished-at="2015-02-26T16:05:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClearCartWithFullItem -->
+        <test-method status="PASS" signature="closeAll()[pri:0, instance:artifact.tests.CartBuilderTest@2b7ac7ba]" name="closeAll" is-config="true" duration-ms="1777" started-at="2015-02-26T16:05:48Z" finished-at="2015-02-26T16:05:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeAll -->
       </class> <!-- artifact.tests.CartBuilderTest -->
+      <class name="artifact.tests.ChargeOrderTest">
+        <test-method status="PASS" signature="navigateToChargeOrderPage()[pri:0, instance:artifact.tests.ChargeOrderTest@5c1b0d41]" name="navigateToChargeOrderPage" is-config="true" duration-ms="152" started-at="2015-02-26T16:05:43Z" finished-at="2015-02-26T16:05:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToChargeOrderPage -->
+        <test-method status="PASS" signature="testAddFullCorrectItem()[pri:0, instance:artifact.tests.ChargeOrderTest@5c1b0d41]" name="testAddFullCorrectItem" duration-ms="605" started-at="2015-02-26T16:05:43Z" finished-at="2015-02-26T16:05:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddFullCorrectItem -->
+        <test-method status="PASS" signature="navigateToChargeOrderPage()[pri:0, instance:artifact.tests.ChargeOrderTest@5c1b0d41]" name="navigateToChargeOrderPage" is-config="true" duration-ms="123" started-at="2015-02-26T16:05:43Z" finished-at="2015-02-26T16:05:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToChargeOrderPage -->
+        <test-method status="PASS" signature="testClearCartWithFullItem()[pri:0, instance:artifact.tests.ChargeOrderTest@5c1b0d41]" name="testClearCartWithFullItem" duration-ms="638" started-at="2015-02-26T16:05:44Z" finished-at="2015-02-26T16:05:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClearCartWithFullItem -->
+      </class> <!-- artifact.tests.ChargeOrderTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

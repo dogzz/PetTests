@@ -1,29 +1,39 @@
 package artifact.base;
 
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import artifact.pages.CartBuilder;
+import artifact.pages.ChargeOrder;
+import artifact.pages.NavigationBlock;
 
 public class BaseTests {
 	
 	private WebDriver driver;
-	public CartBuilder pageCartBuilder;
+	public static CartBuilder pageCartBuilder;
+	public static ChargeOrder pageChargeOrder;
+	public static NavigationBlock blockNavigation;
 	
-	@BeforeSuite
+	@BeforeTest
 	public void init() {
-		driver = new FirefoxDriver();
+		Properties props = System.getProperties();
+		props.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.get("http://localhost:8080/JavaCheckoutJ2eeExampleEjb/");
 		pageCartBuilder = new CartBuilder(driver);
+		pageChargeOrder = new ChargeOrder(driver);
+		blockNavigation = new NavigationBlock(driver);
 	}
 
 	public WebDriver getDriver() {
 		return driver;
 	}
 	
-	@AfterSuite
+	@AfterTest
 	public void closeAll() {
 		driver.quit();
 	}
