@@ -3,20 +3,20 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="artifact.tests.ChargeOrderTest">
-        <methods>
-          <include name="init"/>
-          <include name="navigateToChargeOrderPage"/>
-        </methods>
-      </class> <!-- artifact.tests.ChargeOrderTest -->
       <class name="artifact.tests.CartBuilderTest">
         <methods>
+          <include name="init"/>
           <include name="testAddFullCorrectItem"/>
           <include name="testClearCartWithFullItem"/>
-          <include name="navigateToCartBuilderPage"/>
           <include name="testAddCorrectItem"/>
         </methods>
       </class> <!-- artifact.tests.CartBuilderTest -->
+      <class name="artifact.tests.ChargeOrderTest">
+        <methods>
+          <include name="testAddFullCorrectItem"/>
+          <include name="testClearCartWithFullItem"/>
+        </methods>
+      </class> <!-- artifact.tests.ChargeOrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

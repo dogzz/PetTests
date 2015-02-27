@@ -1,9 +1,11 @@
 package artifact.base;
 
-import java.util.Properties;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -20,10 +22,14 @@ public class BaseTests {
 	
 	@BeforeTest
 	public void init() {
-		Properties props = System.getProperties();
-		props.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://localhost:8080/JavaCheckoutJ2eeExampleEjb/");
+		//Properties props = System.getProperties();
+		//props.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		try {
+			driver = new RemoteWebDriver(new URL("http://172.28.151.18:4444/wd/hub"), DesiredCapabilities.chrome());
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+		driver.get("http://172.28.151.18:8080/JavaCheckoutJ2eeExampleEjb/");
 		pageCartBuilder = new CartBuilder(driver);
 		pageChargeOrder = new ChargeOrder(driver);
 		blockNavigation = new NavigationBlock(driver);
